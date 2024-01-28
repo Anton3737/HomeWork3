@@ -14,7 +14,7 @@ class SumCalculatorTest {
     }
 
     @Test
-    void testThatSumWorksCorrectFor1() {
+    void fibonachiSumWithSet1() {
         int actual = sumCalculator.fibonachiSum(1);
         int expected = 1;
 
@@ -22,15 +22,15 @@ class SumCalculatorTest {
     }
 
     @Test
-    void testThatSumWorksCorrectFor3() {
-        int actual = sumCalculator.fibonachiSum(3);
-        int expected = 6;
+    void fibonachiSumWithSet5() {
+        int actual = sumCalculator.fibonachiSum(5);
+        int expected = 15;
 
         Assertions.assertEquals(expected, actual);
     }
 
     @Test
-    void testThatThrowsExceptionFor0() {
+    void fibonachiSumThrowsExceptionFor0() {
         Assertions.assertThrows(IllegalArgumentException.class, () -> sumCalculator.fibonachiSum(0));
     }
 }
