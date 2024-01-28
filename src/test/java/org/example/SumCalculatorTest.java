@@ -14,23 +14,21 @@ class SumCalculatorTest {
     }
 
     @Test
-    void fibonachiSumWithSet1() {
-        int actual = sumCalculator.fibonachiSum(1);
+    void sumRangeOfNumbersWithSet1() {
+        int actual = sumCalculator.sumRangeOfNumbers(1);
         int expected = 1;
-
         Assertions.assertEquals(expected, actual);
     }
 
     @Test
-    void fibonachiSumWithSet5() {
-        int actual = sumCalculator.fibonachiSum(5);
+    void sumRangeOfNumbersWithSet5() {
+        int actual = sumCalculator.sumRangeOfNumbers(5);
         int expected = 15;
-
         Assertions.assertEquals(expected, actual);
     }
 
     @Test
-    void fibonachiSumThrowsExceptionFor0() {
-        Assertions.assertThrows(IllegalArgumentException.class, () -> sumCalculator.fibonachiSum(0));
+    void sumRangeOfNumbersThrowsExceptionFor0() {
+        Assertions.assertThrows(IllegalArgumentException.class, () -> sumCalculator.sumRangeOfNumbers(0));
     }
 }
